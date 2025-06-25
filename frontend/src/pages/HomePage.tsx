@@ -202,7 +202,8 @@ const HomePage: React.FC = () => {
             ) : (
               <RecordingsList 
                 recordings={recordings} 
-                onPlayRecording={handlePlayRecording} 
+                onPlayRecording={handlePlayRecording}
+                onRefresh={fetchRecordings}
               />
             )}
           </div>

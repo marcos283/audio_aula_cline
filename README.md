@@ -127,6 +127,69 @@ La aplicación se abrirá en `http://localhost:3000`.
 
 2. Los archivos estáticos estarán en el directorio `build/`.
 
+## Desarrollo del MVP
+
+Este proyecto sigue un enfoque de desarrollo de MVP (Producto Mínimo Viable) para probar su funcionamiento básico antes de escalar con características adicionales.
+
+## Depuración y Manejo de Errores
+
+La aplicación incluye un sistema robusto de manejo de errores y logging para facilitar la depuración:
+
+### Logging
+
+- Todos los servicios del backend incluyen logging detallado de sus operaciones
+- Los mensajes de log incluyen información sobre:
+  - Inicio y finalización de operaciones
+  - Parámetros importantes
+  - Resultados de operaciones
+  - Errores y excepciones
+
+### Manejo de Errores
+
+- Cada servicio implementa manejo de errores específico para su dominio
+- Los errores incluyen mensajes descriptivos para facilitar la identificación del problema
+- Se implementan verificaciones previas para evitar errores comunes:
+  - Validación de parámetros de entrada
+  - Verificación de existencia de archivos
+  - Comprobación de configuración de APIs externas
+
+### Estructura de Errores
+
+Los errores devueltos por la API siguen una estructura consistente:
+
+```json
+{
+  "error": "Mensaje descriptivo del error"
+}
+```
+
+Para errores más específicos, se incluyen detalles adicionales cuando es posible.
+
+### Lista de Tareas
+
+El archivo `TODO.md` contiene una lista completa de tareas organizadas por secciones para el desarrollo del MVP. Utiliza este archivo para:
+
+- Seguir el progreso del desarrollo
+- Marcar tareas completadas
+- Documentar problemas encontrados
+- Registrar notas para cada sesión de desarrollo
+
+Para actualizar el estado de una tarea, modifica los marcadores:
+- [ ] Tarea pendiente
+- [x] Tarea completada
+- [!] Tarea con problemas o bloqueada
+
+### Registro de Progreso
+
+Al final de cada sesión de desarrollo, actualiza la sección "Registro de Progreso" en `TODO.md` con:
+- Fecha de la sesión
+- Tareas completadas
+- Tareas en progreso
+- Problemas encontrados
+- Notas adicionales
+
+Este registro ayudará a mantener la continuidad entre diferentes sesiones o días de desarrollo.
+
 ## Licencia
 
 Este proyecto es software privado y no está licenciado para uso público.
